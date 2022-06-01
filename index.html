@@ -15,5 +15,16 @@
 
 <title>Mirror Test</title>
 <p> Mirror Test </p>
-<a href = "conversion.html">Conversion</a>
-<a href = "conversion2.html">Conversion2</a>
+
+<input type="number" id="passcode" name="passcode"/>
+<br>
+<a href = "" onclick="checkPasscode('conversion.html'); return false;">Conversion</a>
+<a href = "" onclick="checkPasscode('conversion2.html'); return false;">Conversion2</a>
+<script>
+function checkPasscode(url) {
+  var input = document.getElementById('passcode').value;
+  if (input == 448812149) {
+    window.location.href = url;
+  }
+}
+</script>
